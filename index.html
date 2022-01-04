@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>My CSS Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+
+    <!-- Login Section -->
+
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftSide-col">
+                    <h1 class="large">Crazy Radness</h1>
+                    <h1 class="large">Made for Developers</h1>
+                </div>
+                <form>
+                    <div class="leftSide-col">
+                        <h2>Username</h2>
+                        <input class="inputbox" name="username "type="text" placeholder="Username">
+                        <h2>Password</h2>
+                        <input class="inputbox" name="password" type="text" placeholder="Password">
+                        </br>
+                        <input class=formbutton type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="rightSide-col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4DAbnHv6VHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Information Section -->
+    <header>
+        <h1>The Standards of Awesomeness</h1>
+    </header>
+    <div class="container"> 
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <h2>Chat with Me</h2>
+                    <div class="fontawesome">
+                        <i class="far fa-comments fa-3x"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Diam phasellus vestibulum lorem sed risus ultricies. Vitae auctor eu augue ut 
+                        lectus arcu bibendum at varius.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <h2>Learn How to Code</h2>
+                    <div class="fontawesome">
+                        <i class="fas fa-users fa-3x"></i>                    
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Diam phasellus vestibulum lorem sed risus ultricies. Vitae auctor eu augue ut 
+                        lectus arcu bibendum at varius.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <h2>Start Your Career</h2>
+                    <div class="fontawesome">
+                        <i class="fas fa-user fa-3x"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Diam phasellus vestibulum lorem sed risus ultricies. Vitae auctor eu augue ut 
+                        lectus arcu bibendum at varius.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit">Learn More!</button>
+        </div>  
+    </div>
+
+    <!-- Text and Photo Section -->
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-7">
+            <div class="col-txt">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Tempor orci eu lobortis elementum nibh tellus molestie. Pharetra sit amet aliquam id. 
+                    Posuere ac ut consequat semper viverra nam libero. Malesuada bibendum arcu vitae elementum 
+                    curabitur vitae nunc sed velit.
+                </p>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="col-img">
+                <img src="img/computer.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function dropdownMenu() {
+        var x = document.getElementById("dropdownClick");
+
+        if (x.className === "topnav") {
+            x.className += " responsive";
+
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+
+</body>
+
+<footer>
+    <div class="row">
+        <div class="col-6">
+            <p>Author: Connor Goodale</p>
+        </div>
+        <div class="col-6">
+            <p><a href="mailto:connor.goodale@gmail.com">connor.goodale@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+
+</html>
